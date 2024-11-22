@@ -22,9 +22,10 @@ function fetchDogBreeds() {
       console.log('Breeds API Response:', data)
       if (data && data.length > 0) {
         data.forEach((breed) => {
-          const listItem = document.createElement('li')
-          listItem.textContent = breed.name
-          breedList.appendChild(listItem)
+          const breedName = document.createElement('div')
+          breedName.classList.add('breed-name')
+          breedName.textContent = breed.name
+          breedList.appendChild(breedName)
         })
         loadingMessage.style.display = 'none'
       } else {

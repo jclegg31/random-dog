@@ -5,15 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dog Breeds</title>
+
+    <!-- external CSS link -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <h1>Dog Breeds</h1>
+<body id="breeds-page">
+    <h1>Dog Breeds</h1><button id="backbtn" type="button">Back to Home</button>
     <div id="loading-message">Breeds are Loading...</div>
-    <ul id="breed-list"></ul>
-    <button id="backbtn" type="button">Back to Home</button>
+    <div class="grid-container" id="breed-list"></div>
 
-    <script src="./js/breeds.js"></script>
+
+    <script type="text/javascript" src="./js/breeds.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 

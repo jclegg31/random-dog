@@ -1,29 +1,66 @@
-/******************************************
-/* CSS
-/*******************************************/
-
-/* Box Model Hack */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /******************************************
 /* LAYOUT
 /*******************************************/
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+button {
+  padding: 5px 20px;
+  margin: 0 10px;
+}
+
 img {
-  display: block;
-  margin: 20px;
-  max-width: 35%;
+  max-width: 30%;
+  margin: 25px auto;
 }
 
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
-
-.dog-image {
-  display: none;
+#main-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.loading-message {
-  display: none;
+/* Specific layout for breeds page */
+#breeds-page {
+  width: 100%;
+  height: auto;
+}
+
+#backbtn {
+  margin-bottom: 20px;
+  padding: 5px 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  width: 100%;
+}
+
+.breed-name {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  text-align: center;
 }
