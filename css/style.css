@@ -4,9 +4,8 @@
   padding: 0;
 }
 
-/******************************************
-/* LAYOUT
-/*******************************************/
+/* LAYOUT */
+
 body {
   font-family: 'Roboto', sans-serif;
   display: flex;
@@ -35,7 +34,7 @@ img {
   justify-content: center;
 }
 
-/* Specific layout for breeds page */
+/* Layout for breeds page */
 #breeds-page {
   width: 100%;
   height: auto;
